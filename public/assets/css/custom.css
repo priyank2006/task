@@ -1,0 +1,46 @@
+.vError {
+    border: 1px solid red;
+    color: red !important;
+}
+
+.offcanvas-size-xl {
+    --bs-offcanvas-width: min(95vw, 600px) !important;
+}
+
+.offcanvas-size-xxl {
+    --bs-offcanvas-width: min(95vw, 90vw) !important;
+}
+
+.offcanvas-size-md {
+    /* add Responsivenes to default offcanvas */
+    --bs-offcanvas-width: min(95vw, 400px) !important;
+}
+
+.offcanvas-size-sm {
+    --bs-offcanvas-width: min(95vw, 250px) !important;
+}
+
+.bg-g {
+    background: #7460ee;
+    background: linear-gradient(to right, #34444c 0%, #7460ee 100%);
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+.text-grey {
+    color: #696969 !important;
+}
+
+.badge-primary {
+    background: rgba(25, 103, 210, .15) !important;
+    color: #1967d2 !important;
+    padding: 10px;
+}
+
+.badge-secondary {
+    background: rgba(52, 168, 83, .15) !important;
+    color: #34a853 !important;
+    padding: 10px;
+}
