@@ -3,7 +3,14 @@
 @section('title', 'Home')
 
 @section('main')
-
+    <style>
+        .ui-state-highlight {
+            height: 2.5em;
+            line-height: 1.2em;
+            background-color: #f0f0f0;
+            border: 1px dashed #ccc;
+        }
+    </style>
     {{-- Include Tasks JS FIle --}}
 
     @include('modules.tasks.js')
@@ -27,7 +34,7 @@
 
                     {{-- Main Accordion Which Will Hold Tasks --}}
                     <div class="accordion tasksAccordion" id="accordionExample">
-                        
+
                     </div>
                 </div>
             </div>
@@ -55,7 +62,8 @@
                         <div class="row">
                             <div class="col">
                                 <div class="form-floating">
-                                    <input required min="1" max="255" name="taskName" type="text" class="form-control">
+                                    <input required min="1" max="255" name="taskName" type="text"
+                                        class="form-control">
                                     <label for=""> Task Name </label>
                                 </div>
                             </div>

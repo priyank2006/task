@@ -25,10 +25,5 @@ class SubTask extends Model
         return $this->hasOne(Task::class, 'id', 'task_id');
     }
 
-    public function setOffsetAttribute()
-    {
-
-        $currCount = SubTask::where('task_id', $this->task_id)->count();
-        $this->attributes['offset'] = $currCount + 1;
-    }
+    
 }
